@@ -1,0 +1,9 @@
+<form method="post">
+    {{form.hidden_tag()}}
+    {% for field in form %}
+        <div class="input-group">
+            {{ field(placeholder=field.label.text) }}
+        </div>
+    {% endfor %}
+    <input type="submit" value="Save Post">
+</form>
