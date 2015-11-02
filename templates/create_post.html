@@ -1,9 +1,23 @@
+{% extends "layouts/base_layout.html" %}
+{% from "macros/form_macros.html" import render_field, render_field_errors %}
+
+{% block head %}
+    {{ pagedown.include_pagedown() }}
+{% endblock %}
+
+{% block content %}
 <form method="post">
     {{form.hidden_tag()}}
+    <div class="form-errors">
+        {% for field in form %}
+            {{ render_field_errors(field) }}
+        {% endfor %}
+    </div>
     {% for field in form %}
-        <div class="input-group">
-            {{ field(placeholder=field.label.text) }}
-        </div>
+        {{ render_field(field) }}
     {% endfor %}
+    <div class="flask-pagedown-preview"></div>
     <input type="submit" value="Save Post">
 </form>
+
+{% endblock %}

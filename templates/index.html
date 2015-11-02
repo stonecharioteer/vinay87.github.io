@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello</title>
-</head>
-<body>
-    <p>Hello There</p>
-</body>
-</html>
+{% extends "layouts/base_layout.html" %}
+
+{% block title %}  Index{{ super() }} {% endblock %}
+
+{% block content %}
+    <p>Hello</p>
+{% endblock %}

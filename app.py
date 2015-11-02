@@ -1,4 +1,7 @@
 from flask import (Flask, g, url_for, redirect, flash, render_template)
+from flask_pagedown import PageDown
+
+
 
 from models import models
 from forms import forms
@@ -6,11 +9,18 @@ from forms import forms
 app = Flask(__name__)
 app.secret_key = 'secret'
 
+pagedown = PageDown(app)
+
 # Configuration Settings
 DEBUG = True
 HOST = '0.0.0.0'
 PORT = 8000
 
+
+def convert_heading(word):
+    word = word.lower()
+    word = "-".join(word.split())
+    return word
 
 @app.before_request
 def before_request():
@@ -38,8 +48,11 @@ def blog():
 @app.route('/new-post', methods=('GET', 'POST'))
 def create_post():
     form = forms.PostForm()
-    if not (form.validate_on_submit()):
-        pass
+    if (form.validate_on_submit()):
+        models.Post.create(
+            post_name=convert_heading(form.post_name.data),
+            post_content=form.post_content.data
+        )
         return redirect(url_for('.blog'))
     return render_template('create_post.html', form=form)
 
