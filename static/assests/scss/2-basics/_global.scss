@@ -1,0 +1,49 @@
+/* Global Styles */
+body{
+    font-size: 1em;
+    color: black;
+    font-family: $robo;
+}
+
+// Heading Styles
+
+h1, h2, h3, h4, h5, h6{
+    color: $blue;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2em;
+}
+
+p{
+    line-height: 1.6;
+}
+
+/* Basic Text Styles */
+
+.caps{
+    text-transform: uppercase;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+/* Basic Color Styles */
+
+.red{
+    color: $blue;
+}
+
+.background-red{
+    background-color: $blue;
+}
+
+.l-red{
+    color: $light-blue;
+}
+
+.d-red{
+    color: $dark-blue;
+}
