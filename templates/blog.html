@@ -2,15 +2,19 @@
 
 
 {% block content %}
+<div class="blogs">
 {% for post in posts %}
     <div class="post">
         <h2> {{ post.post_name }} </h2>
-        <div class="time">{{ post.created_at }}</div>
-        <div class="read-time">{{ post.reading_time }}</div>
+        <div class="meta">
+            <div class="time">Posted on: {{ post.created_at.date().strftime("%d-%m-%Y") }}</div>
+            <div class="read-time">{{ post.reading_time }} minutes</div>
+        </div>
         <div class="content">
             {{ post.post_content[0:200] }}..
         </div>
-        <a href="b/{{ post.post_name }}">Read More</a>
+        <a href="b/{{ post.post_name }}" class="btn hero-cta-btn">Read More</a>
     </div>
 {% endfor %}
+</div>
 {% endblock %}
