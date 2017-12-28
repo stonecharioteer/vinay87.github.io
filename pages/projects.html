@@ -12,31 +12,49 @@
 <body>
   <div class="container">
     <!-- START NAV -->
-    <nav class="navbar is-white">
-      <div class="navbar-brand">
-        <a class="navbar-item brand-text" href="../index.html">
-          Bulma Blog          
-        </a>
-        <div class="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+    <nav class="navbar is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+              <img src="img/web/logo.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="../index.html">
+                Home
+              </a>
+              <a class="navbar-item" href="projects.html" class="navbar-item is-active">
+                Coding Projects
+              </a>
+              <a class="navbar-item" href="writing.html">
+                Writing
+              </a>
+              <a class="navbar-item" href="studies.html">
+                Studies
+              </a>
+              <a class="navbar-item" href="profile.html">
+                My Profile
+             </a>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined is-small" href="https://github.com/vinay87/vinay87.github.io">
+                  <span class="icon">
+                    <i class="fa fa-github"></i>
+                  </span>
+                  <span>View Source</span>
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#">
-            Home
-          </a>
-          <a class="navbar-item" href="#">
-            Archives
-          </a>
-        </div>
-      </div>
     </nav>
     <!-- END NAV -->
-
-    <!-- START ARTICLE FEED -->
+    <!-- Project cards -->
     <section class="articles">
         <div class="column is-8 is-offset-2">
 
