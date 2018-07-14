@@ -10,10 +10,11 @@ At this point, these are the things I am learning. These are things I want to le
     I consider things **learnt** when I make something with it. Something useful. I'll then make an entry in 
 
 Things I am Learning
-*********************
+---------------------
 
-.. list-table:: Things I am Learning
+.. list-table::
     :header-rows: 1
+    :widths: 10 5 5 5 15
 
     * - Topic
       - Related To

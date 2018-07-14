@@ -5,6 +5,7 @@ random.random()
 ----------------
 
 
-.. toctree: Links
+.. toctree:: 
+    :caption: Links
 
     random/learning

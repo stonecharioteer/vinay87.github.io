@@ -84,6 +84,13 @@ pygments_style = 'sphinx'
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ["_themes", ]
 
+html_static_path = ['_static']
+
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+     }
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
