@@ -3,5 +3,3 @@
 
 random.random()
 ----------------
-
-Random stuff goes here.
