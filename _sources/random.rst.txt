@@ -4,4 +4,8 @@
 random.random()
 ----------------
 
-Random stuff goes here.
+
+.. toctree:: 
+    :caption: Links
+
+    random/learning

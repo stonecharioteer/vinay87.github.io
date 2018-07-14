@@ -15,6 +15,8 @@ I'm Vinay Keerthi. A writer/developer/crazy person who loves to make things. In 
     * Poems
 * Coding
     * Python
+    * MicroPython
+    * Tinkering with NodeMCUs and Raspberry Pis.
     * nodejs | html | css | js
 * History
     * World History
