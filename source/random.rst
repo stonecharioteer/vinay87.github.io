@@ -9,3 +9,4 @@ random.random()
     :caption: Links
 
     random/learning
+    random/links
