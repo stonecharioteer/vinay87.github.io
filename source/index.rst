@@ -11,7 +11,6 @@ Hello and welcome to my Github Page. Feel free to look around and peruse through
 
 
 .. toctree::
-   :maxdepth: 4
    :caption: Contents
 
    intro

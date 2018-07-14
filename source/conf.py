@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Vinay\'s Personal Github Page'
+project = 'Vinay Keerthi'
 copyright = '2018, Vinay Keerthi'
 author = 'Vinay Keerthi'
 
