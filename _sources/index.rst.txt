@@ -15,8 +15,8 @@ Hello and welcome to my Github Page. Feel free to look around and peruse through
 
    intro
    resume
-   blog
    writing
    projects
+   blog
    random
 
