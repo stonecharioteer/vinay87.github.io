@@ -38,6 +38,10 @@ December 2016 - |today|
 |                                            |                                                      |
 |                                            |                                                      |
 +--------------------------------------------+------------------------------------------------------+
+| Temperature sensors for Office AC          |                                                      |
+| Monitoring                                 |                                                      |
+|                                            |                                                      |
+|                                            |                                                      |
 |                                            |                                                      |
 +--------------------------------------------+------------------------------------------------------+
 |                                            |                                                      |
@@ -139,7 +143,8 @@ The system allows me to add books, search for books that I own, shows me where t
 around, and fitting them into the available space. It allows horizontal and vertical placement of books, and provides services to scrape Amazon for book prices,
 alerting me via Telegram and email when the price drops to its least known price in the available time-frame.
 
-You can find more details at the blogpost associated with it, as well as implementation details in the github repository. Additionally, there is a Youtube video here showing Shelfie in action.
+You can find more details at the blogpost associated with it, as well as implementation details in the github repository. Additionally, there is a Youtube 
+video here showing Shelfie in action.
 
 *********************
 Smart Coffee Machine
@@ -148,6 +153,13 @@ Technology: **micropython**, **ESP8266**, **nodemcu**, **python**, **rabbitmq**,
 
 Placing a 10A relay into a switch box, along with an ESP8266 seemed like the best idea to power a coffee machine as and when I wanted,
 so I did just that. This project helped me build a coffee machine that can be scheduled at will, using simple programming.
+
+
+*****************************************
+Onewire Temperature Monitoring System
+*****************************************
+Technology: **micropython**, **ESP8266**, **nodemcu**, **python**, **ds18b20**
+
 
 *****************************************
 Writing a Novel using Sphinx and Python
@@ -179,6 +191,43 @@ Open Source Contributions
 1. Flask Documentation Contributions
 2. Vial
 
+------------------
+Technical Skills
+------------------
+
+1. Python
+    #. Micropython
+    #. Cython 
+#. Haskell
+#. Nodejs
+#. C
+#. Raspberry Pi Programming
+    #. Python
+    #. C
+#. ESP8266 Programming
+    #. Arduino C
+    #. Micropython
+    #. Circuitpython
+#. Full Stack Web Development
+    #. React.js
+    #. npm
+    #. Javascript
+    #. Bootstrap CSS
+
+#. Redis
+#. RabbitMQ
+#. Memcached
+#. Docker
+    #. Docker Swarm
+#. Mesos
+#. Elasticsearch
+#. SOLR
+#. System Design
+#. MongoDB
+#. CouchDB
+#. MySQL
+#. PostgreSQL
+#. Ansible
 ------------------
 Hobbies
 ------------------
