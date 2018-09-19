@@ -24,9 +24,10 @@ copyright = '2018, Vinay Keerthi'
 author = 'Vinay Keerthi'
 
 # The short X.Y version
-version = '1.0'
+version = '2018.09'
+
 # The full version, including alpha/beta/rc tags
-release = '1.0a'
+# release = '2018.09'
 
 
 # -- General configuration ---------------------------------------------------
@@ -86,11 +87,13 @@ html_theme_path = ["_themes", ]
 
 html_static_path = ['_static']
 
+html_last_updated_fmt=""
+html_use_smartypants=True
 html_context = {
     'css_files': [
         '_static/theme_overrides.css',  # override wide tables in RTD theme
         ],
-     }
+    }
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -129,19 +132,21 @@ html_theme_options = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'VinaysPersonalGithubPagedoc'
+htmlhelp_basename = 'VinayKeerthi'
 
 
-# -- Options for LaTeX output ------------------------------------------------
+# -- Options for latex output -------------------------------------------------
+
+latex_show_urls = ""
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    # 'pointsize': '12pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -156,8 +161,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'VinaysPersonalGithubPage.tex', 'Vinay Keerthi',
-     'Vinay Keerthi', 'manual'),
+    (master_doc, 'VinayKeerthi.tex', 'Portfolio',
+    'Vinay Keerthi', 'manual'),
 ]
 
 
@@ -166,8 +171,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'vinayspersonalgithubpage', 'Vinay Keerthi',
-     [author], 1)
+    (master_doc, 'VinayKeerthi', 'Vinay Keerthi',
+    [author], 1)
 ]
 
 
@@ -177,9 +182,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'VinaysPersonalGithubPage', 'Vinay Keerthi',
-     author, 'VinaysPersonalGithubPage', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, 'VinayKeerthi', 'Vinay Keerthi',
+    author, 'VinayKeerthi', 'My personal pages',
+    'Miscellaneous'),
 ]
 
 
@@ -190,7 +195,7 @@ epub_title = project
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
-
+epub_show_urls=""
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
