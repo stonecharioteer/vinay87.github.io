@@ -137,7 +137,7 @@ htmlhelp_basename = 'VinayKeerthi'
 
 # -- Options for latex output -------------------------------------------------
 
-latex_show_urls = ""
+# latex_show_urls = ""
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').

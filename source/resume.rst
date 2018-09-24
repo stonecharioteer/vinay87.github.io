@@ -15,7 +15,7 @@ Curriculum Vitae
     
     **Github Page:** `vinay87.github.io <https://vinay87.github.io>`_ | `vinay87 <https://github.com/vinay87>`_
     
-    **City of Residence:** Bangalore
+    **City of Residence:** Bangalore, KA, India
 
 ------------
 Experience
@@ -29,23 +29,90 @@ GKN Aerospace India / GKN Driveline
 
 December 2016 - |today|
 
-+--------------------------------------------+------------------------------------------------------+
-|              Projects                      |              Benefits                                |
-+============================================+======================================================+
-| **Archimedes** : Simulation Process &      |                                                      |
-| Data Management System                     |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
-| Temperature sensors for Office AC          |                                                      |
-| Monitoring                                 |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
+This role involves various development activities, mostly handled independently. I was recruited as the sole developer for the business in India, and tasked with setting
+up the foundation for a team of software developers.
+
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|                                            |                                                                  |                                                        |
+|              **Projects**                  |          **Contribution/Activities**                             |              **Benefits**                              |
+|                                            |                                                                  |                                                        |
++============================================+==================================================================+========================================================+
+| **Archimedes** : Simulation Process &      | * Lead Developer for the project, also created the brand         |  * Built most of the tool single-handedly, handling    |
+| Data Management System                     |   identity and designed the logos and palettes.                  |    both the project conception as well as execution.   |
+|                                            |                                                                  |                                                        |
+|                                            | * Designed the microservice architecture                         |  * This project saved the company from investing in    |
+|                                            |                                                                  |    a relatively inferior third-party product which     |
+|                                            | * Developed horizontally scalable Python backends                |    would have cost the company a considerable          |
+|                                            |                                                                  |    licensing charge annually.                          |
+|                                            | * Designed and developed the user-interfaces using               |                                                        |
+|                                            |   React and Bootstrap CSS.                                       |  * The UI was designed with non-programmers in mind,   |
+|                                            |                                                                  |    and this helped them embrace it easily.             |
+|                                            | * Designed a data flow structure that tracks the                 |                                                        |
+|                                            |   data provenance.                                               |  * The data provenance model helped engineers          |
+|                                            |                                                                  |    find files and retrieve them no matter how the      |
+|                                            | * Created a yaml-like file format that tracks                    |    files were generated, thereby identifying the       |
+|                                            |   process flow and data flow, integrating it with                |    procedure and the people involved in generation.    |
+|                                            |   backends and frontends so that dynamic interfaces              |                                                        |
+|                                            |   can be generated from YAML files.                              |  * This could arguably be the first known usage        |
+|                                            |                                                                  |    of Apache Lucene/Elasticsearch/SOLR in a mechanical |
+|                                            | * Created a UI to create the workflow YAMLs using Google's       |    engineering context. This enabled users to find     |
+|                                            |   *Blockly* library.                                             |    data within hitherto inaccessible file formats,     |
+|                                            |                                                                  |    thus making both file retrieval and optimization    |
+|                                            | * More project details                                           |    using machine learning models which automatically   |
+|                                            |   `here. <https://vinay87.github.io/projects/archimedes>`_       |    peruse through the indexed data themselves,         |
+|                                            |                                                                  |    possible.                                           |
+|                                            |                                                                  |                                                        |
+|                                            |                                                                  |                                                        |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+| Custom Parsers for proprietary formats     |  * Created python modules to parse ascii formats read/written    |  * This saves the engineers time and effort spent      |
+|                                            |    by mechanical engineering software.                           |    parsing and modifying file formats that were not    |
+|                                            |                                                                  |    really intended for human usage.                    |
+|                                            |  * Created CLI tools to help engineers modify said file formats. |                                                        |
+|                                            |                                                                  |  * This speeds up the pre & post processing time       |
+|                                            |                                                                  |    and sets up a robust *poke-yoke* system in place.   |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+
+..
+  breaking table here.
+
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|                                            |                                                                  |                                                        |
+|              **Projects**                  |          **Contribution/Activities**                             |              **Benefits**                              |
+|                                            |                                                                  |                                                        |
++============================================+==================================================================+========================================================+
+| Automated pipelines for mechanical         |  * Bridged the workflows of mechanical engineers so that they    |  * Mechanical engineers who are not used to writing    |
+| workflows                                  |    can be integrated into tools like Jenkins.                    |    code can now create simple scripts to automate      |
+|                                            |                                                                  |    their workflow and monitor said automation with     |
+|                                            |  * Created libraries and scripts enabling the use of tools       |    ease.                                               |
+|                                            |    such as *Apache Airflow* or Jenkins to automate               |                                                        |
+|                                            |    their workflow.                                               |                                                        |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+| Temperature sensors for Office AC          |  * Plugged ESP8266 modules running micropython webservers        |  * Made it easier for housekeeping to keep track       |
+| Monitoring                                 |    to capture temperature data across the office.                |    of an archaic AC's efficiency and identify          |
+|                                            |                                                                  |    hot zones.                                          |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+| Dashboards for Team Deliverables           |  * Created dashboards using Grafana for team deliverables.       |  * Made it easier for business owners to identify      |
+|                                            |                                                                  |    issues and view the highlights of their teams       |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+
+
+Additional Responsibilities
+
+* Various SysAdmin and DevOps roles:
+    * SCM duties for Subversion and Gitlab.
+    * Setting up a subversion mirror server in Bangalore to sync to Germany.
+    * Writing hooks for SCM Servers.
+    * Automating builds/provisioning using Ansible and Jenkins.
+    * Maintaining local Docker Registry.
+    * Maintaining local pypi index.
+    * Creating adhoc scripts for the team to save them time.
+    * Provisioning and Maintenance of VMWare vSphere Hypervisor machines.
+
 
 ************************************
 Flipkart Internet Pvt. Ltd.
@@ -54,26 +121,57 @@ Flipkart Internet Pvt. Ltd.
 
 February 2014 - November 2016
 
-+--------------------------------------------+------------------------------------------------------+
-|              Projects                      |              Benefits                                |
-+============================================+======================================================+
-| **OINK** : Work Management System for      |                                                      |
-|   Writers.                                 |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
-| **LEONARDO** : USP Image Creation Tool     |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
-| **Adhoc-Scripts/Tools**                    |                                                      |
-|                                            |                                                      |
-|                                            |                                                      |
-+--------------------------------------------+------------------------------------------------------+
+Working for the Catalog function of Flipkart, I was tasked with building tools and scripts to help content writers in their daily tasks.
+
++--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
+|                                            |                                                      |                                                      |
+|              **Projects**                  |              **Contribution/Activities**             |             **Benefits**                             |
+|                                            |                                                      |                                                      |
++============================================+======================================================+======================================================+
+| **OINK**                                   |  * Created a tool to enter daily work, record        |  * This tool simplified the team leaders' work.      |
+|                                            |    content metrics such as grammar, word count,      |                                                      |
+| Work Management System for Writers         |    SEO scoring from an internal algorithm and        |  * It reduced duplication and conflict in work       |
+|                                            |    to prevent duplication of work across the         |    from an average of ten times a month to zero.     |
+|                                            |    function.                                         |                                                      |
+|                                            |                                                      |  * The tool simplified gathering metrics for         |
+|                                            |                                                      |    articles and allowed the team to focus on         |
+|                                            |                                                      |    writing great content.                            |
+|                                            |                                                      |                                                      |
+|                                            |                                                      |                                                      |
++--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
+| **LEONARDO**                               |  * Created a tool that was used to generate          |  * This helped buyers make educated choices in a     |
+|                                            |    images that could educate buyers about the key    |    few seconds.                                      |
+| USP Image Creation Tool                    |    selling points of a product without having to     |                                                      |
+|                                            |    read the content or specification sheets.         |  * SMEs were able to develop various templates in    |
+|                                            |                                                      |    a few minutes and using the icons created by      |
+|                                            |  * Created an MS-Excel based templating system       |    graphics designers, five thousand product images  |
+|                                            |    wherein Subject Matter Experts could decide       |    could be generated in five  minutes.              |
+|                                            |    what key selling points to place on the image,    |                                                      |
+|                                            |    and how the product image could be positioned.    |  * This prevented the company from having to         |
+|                                            |                                                      |    outsource the work at a price of 60INR per image. |
+|                                            |  * Automated the entire workflow so that images      |    The third-party company could also only deliver   |
+|                                            |    of top quality could be produced.                 |    500 images a week. This tool could do 10x that in |
+|                                            |                                                      |    five minutes, at no additional cost.              |
+|                                            |  * Tool was developed with Python and PyQt.          |                                                      |
+|                                            |                                                      |  * The tool was used to meet the target of creating  |
+|                                            |                                                      |    600,000 product images in four months, as opposed |
+|                                            |                                                      |    to waiting a year to do it, at an exhorbitant     |
+|                                            |                                                      |    cost.                                             |
+|                                            |                                                      |                                                      |
+|                                            |                                                      |                                                      |
++--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
+| **Adhoc-Scripts/Tools**                    |  * Created scripts to apply season labels to         |  * Tool could identify white spaces and apply the    |
+|                                            |    500,000 apparel images.                           |    logo where the image was empty.                   |
+|                                            |                                                      |                                                      |
+|                                            |                                                      |                                                      |
++--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
 
 
+Additional Responsibilites
+
+* First writer/editor in charge of the Books function.
+* Created workflows for future writers who contribute content on books.
+* Created tools to prevent plagiarism.
 
 ************************************
 Narasipur Autocomponents Pvt. Ltd
@@ -82,15 +180,15 @@ Narasipur Autocomponents Pvt. Ltd
 
 **May 2013-January 2014**
 
-************************************
-India Nippon Electricals Ltd.
-************************************
+*************************************************
+India Nippon Electricals Ltd. (Lucas-TVS Group)
+*************************************************
 **Graduate Engineer Trainee - Production Engineering**
 
 **April 2012-April 2013**
 
 ************************************
-Harita Fehrer Ltd.
+Harita Fehrer Ltd. (TVS Group)
 ************************************
 **Graduate Engineer Trainee (Temporary) - Quality**
 
@@ -119,9 +217,9 @@ Website: `vial-microserver.github.io <https://vial-microserver.github.io>`_
 Vial is a webserver for microprocessors, written in C, for Micropython.
 It is written to be similar to Flask, in that it uses decorators to annotate the routes.
 
-*************
-Telegram Bot
-*************
+********************
+Zelda: Telegram Bot
+********************
 Technology: **python**, **raspberry pi**, **telegram-bot-api**, **rasa-python**
 
 Zelda is a personal chat bot that I use to link up and debug several of my services.
@@ -131,42 +229,33 @@ Zelda is developed so that I can add plugins as and when I want.
 **************************************
 Shelfie: Bookshelf Search Engine
 **************************************
-Technology: **micropython**, **ESP8266**, **nodemcu**, **ws8212b**, **neopixels**, **rabbitmq**, **react native**, **apache solr**, **memcached**, **docker**, **docker swarm**
+Technology: **micropython**, **ESP8266**, **nodemcu**, **ws8212b**, **neopixels**, **rabbitmq**, **react native**, **apache solr**,
+**memcached**, **docker**, **docker swarm**
 
-I own 900 (need exact number) books at home. Finding these prove to be a problem. Therefore, I attached addressable RGB LED strips to my bookshelves, and
-designed, and built a search system for these books. The LED strips are controlled by ESP8266 microprocessors, running my own Vial micro-webserver module
-written in C, and they serve a REST API that allows controlling the LEDs. The orchestration service is written in Python, and runs on several Raspberry Pi Zero Ws.
-The data is stored on CouchDB, running inside a docker container, again orchestrated across the Pi 0Ws using Docker Swarm. The front end UI is written using React
-Native, the chat-based remote interface is written using Telegram's API, and the search is facilitated using Apache SOLR, again running on its own Raspberry Pi 3B.
-
-The system allows me to add books, search for books that I own, shows me where the book is, and where to put a new book. It also provides suggestions for moving books
-around, and fitting them into the available space. It allows horizontal and vertical placement of books, and provides services to scrape Amazon for book prices,
-alerting me via Telegram and email when the price drops to its least known price in the available time-frame.
-
-You can find more details at the blogpost associated with it, as well as implementation details in the github repository. Additionally, there is a Youtube 
-video here showing Shelfie in action.
+Connected addressable LED lights to my bookshelves to enable me to find a book through my own application.
+The LEDs point to the correct location of the book(s) I search for.
+This query system also supports advanced queries based on genre, read date and read count.
 
 *********************
 Smart Coffee Machine
 *********************
 Technology: **micropython**, **ESP8266**, **nodemcu**, **python**, **rabbitmq**, **react native**, **apache solr**, **memcached**, **docker**, **docker swarm**
 
-Placing a 10A relay into a switch box, along with an ESP8266 seemed like the best idea to power a coffee machine as and when I wanted,
-so I did just that. This project helped me build a coffee machine that can be scheduled at will, using simple programming.
-
+Connected a 10A relay to a standard switch box. The relay is controlled by a nodemcu, enabling my family members to set a schedule for our
+coffee machine to automatically turn on and off at a set time. The timing and orchestration is managed by a Raspberry Pi zero w.
 
 *****************************************
 Onewire Temperature Monitoring System
 *****************************************
 Technology: **micropython**, **ESP8266**, **nodemcu**, **python**, **ds18b20**
 
-
 *****************************************
-Writing a Novel using Sphinx and Python
+Amazon Alexa Iterface for Zelda
 *****************************************
-Technology: **RST**, **python**, **sphinx**
+Technology: **Raspberry Pi**, **Google Voice Hat**, **Amazon Alexa Skills**, **AlexaPi**
 
-
+Using a Google Voice Hat for the Raspberry Pi, running the AlexaPi OS, I've set up a voice interface for my telegram chat bot,
+one that can also access all my home services.
 
 ------------------
 Blog Articles
@@ -177,12 +266,14 @@ Blog Articles
 #. Creating Product Specification Images For E-Retail Using Python
 #. Raspberry Pi Around the House
 #. Using RabbitMQ on a Raspberry Pi
-#. Shelfie: A Neopixel Search Engine For Inventory Management
+#. Shelfie: A Search Engine For Inventory Management
 #. Writing a novel using Sphinx and Python.
 #. Automating Sphinx Pipelines For the Kindle using Jenkins and Calibre-CLI
 #. Manage Migraines using a Raspberry Pi, a Sense Hat, and a lot of Python
 #. Using Python-Rasa to make simple NLP interfaces on the Raspberry Pi.
 #. Programming Voice Interfaces for Amazon Alexa using Python
+#. Setting Up Wifi and Access Points on the ESP8266 Using Micropython
+#. Developing Micropython Modules
 
 ------------------------------------
 Open Source Contributions
@@ -195,39 +286,42 @@ Open Source Contributions
 Technical Skills
 ------------------
 
-1. Python
-    #. Micropython
-    #. Cython 
-#. Haskell
-#. Nodejs
-#. C
-#. Raspberry Pi Programming
+1. Programming Languages
     #. Python
-    #. C
+    #. Micropython
+    #. Cython
+#. Raspberry Pi Programming
 #. ESP8266 Programming
     #. Arduino C
     #. Micropython
     #. Circuitpython
 #. Full Stack Web Development
+    #. System Design for Microservices
     #. React.js
-    #. npm
+    #. nodejs
     #. Javascript
     #. Bootstrap CSS
-
-#. Redis
-#. RabbitMQ
-#. Memcached
-#. Docker
+    #. Redis
+    #. RabbitMQ
+    #. Memcached
+    #. Docker
     #. Docker Swarm
-#. Mesos
-#. Elasticsearch
-#. SOLR
-#. System Design
-#. MongoDB
-#. CouchDB
-#. MySQL
-#. PostgreSQL
-#. Ansible
+    #. Mesos
+    #. Elasticsearch
+    #. Apache SOLR
+#. Databases
+    #. SQL
+        #. MySQL
+        #. PostgreSQL
+    #. NoSQL
+        #. MongoDB
+        #. CouchDB
+#. Others
+    #. Ansible
+    #. Jenkins
+    #. Grafana
+    #. Apache Airflow
+
 ------------------
 Hobbies
 ------------------
@@ -239,3 +333,9 @@ Hobbies
 ------------------
 Education
 ------------------
+
++---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
+|    **Degree**                         |       **Year**                   |              **University**                     | Percentage  |
++=======================================+==================================+=================================================+=============+
+| Bachelors of Engineering (Mechanical) |        2010                      |           Visvesvariah Technological University |   75        |
++---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
