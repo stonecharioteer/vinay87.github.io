@@ -2,11 +2,16 @@
 Learning
 *********
 
-I am constantly learning new things. This stems because I am super curious. It's all I can do to control this, and focus. I like my bullet journal for this reason. But sometimes, it helps to be super curious. If my school teachers understood this instead of wondering why I was a bad student, I would have spent school years learning so much more.
+I am constantly learning new things. This stems because I am super curious. It's all I can do to control this,
+and focus. I like my bullet journal for this reason. But sometimes, it helps to be super curious.
+If my school teachers understood this instead of wondering why I was a bad student,
+I would have spent school years learning so much more.
 
 At this point, these are the things I am learning. These are things I want to learn, and I'll use 5 🟊s to mark progress.
 
-.. NOTE:: 
+.. admonition:: Note
+    :class: tip
+
     I consider things **learnt** when I make something with it. Something useful. I'll then make an entry in the projects pages.
 
 Things I am Learning
@@ -23,9 +28,9 @@ Things I am Learning
       - Comment
     * - Sphinx
       - Python, Documentation, Programming
-      - 🟊🟊
-      - 2018-07-14
-      - TODO: Learn how to make a local readthedocs server and have it automatically pull from various mappable libraries.
+      - 🟊🟊🟊🟊
+      - 2018-09-28
+      - TODO: Link this to Jenkins so I can run my own readthedocs server, in a manner of speaking.
     * - RabbitMQ | Pika
       - Python, Microservices, Deployment, Development
       - 🟊🟊

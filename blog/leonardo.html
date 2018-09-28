@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LEONARDO: Generating Product Unique Specification Images using Python &mdash; Vinay Keerthi  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="random.random()" href="../random.html" />
+    <link rel="prev" title="Technical Blog" href="index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Vinay Keerthi
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018.09
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">about:me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resume.html">Curriculum Vitae</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#experience">Experience</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#gkn-aerospace-india-gkn-driveline">GKN Aerospace India / GKN Driveline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#flipkart-internet-pvt-ltd">Flipkart Internet Pvt. Ltd.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#narasipur-autocomponents-pvt-ltd">Narasipur Autocomponents Pvt. Ltd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#india-nippon-electricals-ltd-lucas-tvs-group">India Nippon Electricals Ltd. (Lucas-TVS Group)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#harita-fehrer-ltd-tvs-group">Harita Fehrer Ltd. (TVS Group)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#indian-institute-of-science">Indian Institute of Science</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#personal-projects">Personal Projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#vial-a-webserver-for-microprocessors">Vial: A Webserver for Microprocessors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#zelda-telegram-bot">Zelda: Telegram Bot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#shelfie-bookshelf-search-engine">Shelfie: Bookshelf Search Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#smart-coffee-machine">Smart Coffee Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#onewire-temperature-monitoring-system">Onewire Temperature Monitoring System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resume.html#amazon-alexa-iterface-for-zelda">Amazon Alexa Iterface for Zelda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#technical-blog-articles">Technical Blog Articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#open-source-contributions">Open Source Contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#technical-skills">Technical Skills</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#hobbies">Hobbies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#education">Education</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../writing.html">Writing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../writing/books.html">My Books</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projects/workstations.html">1. My Workstation(s):</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/shelfie.html">2. Shelfie, or How to Find a Book When You Own 900+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/influence_poster.html">3. Visualizing Childhood Creative Influences: A Poster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/tempmon.html">4. TempMon: Monitoring Migraines (and Weather)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/prime_ministers.html">5. A Study of the Life Spans and Service of the Prime Ministers of India</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/vial.html">6. Vial: Flask for MicroPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/tasker.html">7. Tasker</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Technical Blog</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">LEONARDO: Generating Product Unique Specification Images using Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-specifics">The Specifics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legal">Legal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">random.random()</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../random/learning.html">Learning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../random/learning.html#things-i-am-learning">Things I am Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../random/links.html">Interesting Links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../random/links.html#programming">Programming</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#javascript-tutorial-interactive-help-frameworks">Javascript Tutorial / Interactive Help Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#visualization">Visualization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#frameworks">Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#misc-javascript">Misc. Javascript</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#interesting-python-libraries">Interesting Python Libraries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../random/links.html#misc-tools">Misc. Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Vinay Keerthi</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Technical Blog</a> &raquo;</li>
+        
+      <li>LEONARDO: Generating Product Unique Specification Images using Python</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/blog/leonardo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../random.html" class="btn btn-neutral float-right" title="random.random()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Technical Blog" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="leonardo-generating-product-unique-specification-images-using-python">
+<h1>LEONARDO: Generating Product Unique Specification Images using Python<a class="headerlink" href="#leonardo-generating-product-unique-specification-images-using-python" title="Permalink to this headline">¶</a></h1>
+<p>When I was at Flipkart in the Content Team, my manager brought up an interesting project for the Graphic Designers
+in our team. He said Flipkart was going to invest in the creation of product images that would replace content.
+It was going to be an image where a prospective buyer could see the key specifications of the project arrayed
+around the product image in a neat fashion.</p>
+<p>He was talking about doing this manually for a <em>few hundred thousand products</em>.</p>
+<p>When people talk about how they use Python at work, they’re usually talking about data munging, visualization or automation.
+A different subset uses it for Django or Flask.</p>
+<p>I started with Python to help the team collate information related to content written by them, and prevent rewriting duplicates.</p>
+<p>I was still a greenhorn when it came to Python in those days, but I’d learnt how useful image processing libraries could be.
+I used to watermark images using IrfanView, and I’d seen that Gimp had Python plugins.
+I wondered if I could use that to help my team out.</p>
+<p><strong>*Could</strong> Python be used to generate images?*</p>
+<p>I offered to try and do something to automate the grunt work: selecting the product image, getting the specifications and
+selecting appropriate icons, choosing what images to place and placing them exactly in the center, ensuring that the product
+brand logo and the Flipkart brand logo would appear at the top left corner, and that the Flipkart logo would always
+be just a little larger than the product brand logo, for instance.</p>
+<p>He said I should try doing this. Frankly, I wondered if I was in over my head. I keep doing this to myself.</p>
+<p>The first step was generating a canvas. I needed something with a 9:14 resolution, according to the requirement.</p>
+<p>I defined a custom class for this image, the <code class="docutils literal notranslate"><span class="pre">USPImage</span></code> class.</p>
+<p>One of the methods, named prepareCanvas, would then take the aspect ratio provided to it, and the width,
+and, as if the name was not obvious, prepare the canvas.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Image</span></code> class comes from the <code class="docutils literal notranslate"><span class="pre">PIL</span></code> Python library. That’s a handy library that made this entire project possible. It provides an abstraction for images as matrixes of RGBA values at each row x column intersection. But it doesn’t offer any of the readymade tools provided in image processing software such as Photoshop or Gimp.</p>
+<p>But it does provide you the highest degree of control you could want.</p>
+<p>Using a canvas size of 1800, I could instantiate an image canvas just by using self.prepareCanvas((9,14),1800).</p>
+<p>I had a canvas.</p>
+<img alt="../_images/canvas.png" src="../_images/canvas.png" />
+<p>Now I had a problem I hadn’t encountered in many years. One of co-ordinate geometry. I was pleased that I could use the stuff I learnt not only in high-school, but also in my undergraduate program, studying mechanical engineering, to good use.</p>
+<p>I had to place objects on the canvas, in an organized fashion.</p>
+<p>The first image I had to place was the product image. And I had another problem.</p>
+<p>I didn’t have access to the image repository at Flipkart. I didn’t quite have the time to ask my manager if I could tap into the CDN, so I just wrote a method to download the images off the website.</p>
+<p>What I didn’t realize was that I’d have a tough time cleaning the images.</p>
+<p>A simple “remove all white pixels” seemed like the obvious answer, but soon, I realized that was quite naive. Instead, I had to work on a different algorithm. And I had another problem, since the background color wasn’t quite uniform across product images.</p>
+<p>To solve this, I had to sweep through the edges of the images, allowing my code to make an educated guess about the background colour. Once the code identified the colour, it swept through the image row by row, from left to right. It stopped whenever it encountered a drastic change in colours. “There,” I told myself,” is the product.”</p>
+<p>Obviously, I had to redo this from right to left. I checked the results once the code completed, and I realized where I had been wrong. There were products where there were “hollow-points.” The space between headphones, for instance. Or the space between the legs of a TV. So I had the code redo this operation from top to bottom, and bottom to top. And then, I had a repository of images to take the product from.</p>
+<p>Once I had the image, it was back to the canvas for me. I had to place the image at the very center, according to the brand’s guidelines.</p>
+<p>Pillow’s Image class allows easy placement of another Image object at a given x,y location. However, it doesn’t really place them at the center.</p>
+<img alt="../_images/01_product.png" src="../_images/01_product.png" />
+<p>Once I had this down, I had the next steps to solve. Placing icons around the product image. This was pretty straightforward.</p>
+<img alt="../_images/02_icons.png" src="../_images/02_icons.png" />
+<p>However, there was something I did not consider. The specification icons were also going to have some text underneath. I had to make sure that the text would, in no circumstances, overlap with the other icons or any other text.</p>
+<p>This was quite harder to sort. So instead of just placing the icon and then placing the text, I ensured that I created the Icon object with text underneath, and then calculated what positions to place the icons in.</p>
+<p>That simplified the problem, and ensured that the icons would be spaced apart.</p>
+<p>With this first version I had only to refine the solution. I received additional instructions and directives, such as placing the Flipkart logo and the brand logo on the image, choosing a background image randomly from a repository of background images, changing the color of the icon to a suitable palette predetermined by the graphic designers, based on the background colors.</p>
+<p>In all honesty, it was the most fun I had had with programming until that day.</p>
+<p>As I was doing this, my manager told me that the Catalog team was looking at outsourcing this work, to a graphics company that would charge us a bomb. Thanks to the additional pressure, I was able to finish the prototype tool, which I dubbed Leonardo (after both the artist and the Teenage Mutant Ninja Turtle).</p>
+<p>On the day of reckoning, my manager told me that the inhouse artists could deliver 5 images per day. The external company was promising about 30 per day, at an exhorbitant price.</p>
+<p>He asked me to show him what my tool could create.</p>
+<img alt="../_images/motorola-moto-g-turbo-edition-xt1557-original-imaeg6y5seu79f6r-1.jpeg" src="../_images/motorola-moto-g-turbo-edition-xt1557-original-imaeg6y5seu79f6r-1.jpeg" />
+<p>He liked the quality of the work. It had some bugs to sort out, and I fixed the quality issues by increasing the DPI of the image. But he asked how much time one image takes to render.</p>
+<p>I didn’t quite understand what he meant. I ran my program in front of him, using the icon pool that the graphics designers had created over the past few weeks and we timed it.</p>
+<p>12,000 images in one hour.</p>
+<p>What’s more, when he came back with some strange requirements for the logo, all I had to do was rerun the script with the new rules and we were set.</p>
+<img alt="../_images/jbl-t250si-original-imaecy3pzyeqhabg.jpeg" src="../_images/jbl-t250si-original-imaecy3pzyeqhabg.jpeg" />
+<p>Doing this project made me realize what Python could be used for. I’m not sure I could understand it then. I was a poor programmer, and I didn’t know many things I probably should have. The application was used for a couple of months after I left, and then that project was scrapped.</p>
+<p>However, it does answer a simple question.</p>
+<p><em>Python **can*</em> be used for graphic design.*</p>
+<p>And it should be, because there are so many things you can automate in that world.</p>
+<div class="section" id="source">
+<h2>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h2>
+<p>The source for this project is available <a class="reference external" href="https://github.com/vinay87/leonardo">here</a>. It still works, but granted that I wrote this program when I was a total Python newbie, there are many issues with the packaging and installation section. If you’re interested in giving Leonardo a shot, email me and I’ll help you out. I love this project because it taught me so much about image processing, and about automating things in general.</p>
+</div>
+<div class="section" id="the-specifics">
+<h2>The Specifics<a class="headerlink" href="#the-specifics" title="Permalink to this headline">¶</a></h2>
+<p>Leonardo uses Python, Pillow, Beautiful Soup and PyQt4.</p>
+</div>
+<div class="section" id="legal">
+<h2>Legal<a class="headerlink" href="#legal" title="Permalink to this headline">¶</a></h2>
+<p>The images used here are the property of Flipkart, and their respective brands. They are used here only in an educational/informative vein.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../random.html" class="btn btn-neutral float-right" title="random.random()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Technical Blog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vinay Keerthi.
+      Last updated on Sep 28, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #a54;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #333;
+    }
+  </style>
+
+
+</body>
+</html>

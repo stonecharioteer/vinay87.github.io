@@ -1,7 +1,8 @@
 .. intro.rst introduction file.
 
-Hello, World!
-==============
+=========
+about:me
+=========
 
 
 I'm Vinay Keerthi. A writer/developer/crazy person who loves to make things. In no particular order I enjoy these things:
@@ -17,7 +18,7 @@ I'm Vinay Keerthi. A writer/developer/crazy person who loves to make things. In 
     * Python
     * MicroPython
     * Tinkering with NodeMCUs and Raspberry Pis.
-    * nodejs | html | css | js
+    * nodejs | html | css | js (with certain disdain for centering ``div`` tags)
 * History
     * World History
     * History of War

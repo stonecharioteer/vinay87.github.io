@@ -53,6 +53,9 @@
           
 
           
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
           </a>
 
           
@@ -85,8 +88,7 @@
             
               <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Vinay Keerthi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html">Hello, World!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">about:me</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resume.html">Curriculum Vitae</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resume.html#experience">Experience</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../resume.html#gkn-aerospace-india-gkn-driveline">GKN Aerospace India / GKN Driveline</a></li>
@@ -106,7 +108,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../resume.html#amazon-alexa-iterface-for-zelda">Amazon Alexa Iterface for Zelda</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../resume.html#blog-articles">Blog Articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resume.html#technical-blog-articles">Technical Blog Articles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resume.html#open-source-contributions">Open Source Contributions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resume.html#technical-skills">Technical Skills</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resume.html#hobbies">Hobbies</a></li>
@@ -127,7 +129,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../projects/tasker.html">7. Tasker</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../blog.html">Blog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">Technical Blog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../blog/leonardo.html">LEONARDO: Generating Product Unique Specification Images using Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../blog/leonardo.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blog/leonardo.html#the-specifics">The Specifics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blog/leonardo.html#legal">Legal</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="reference internal" href="../random.html">random.random()</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Learning</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#things-i-am-learning">Things I am Learning</a></li>
@@ -224,9 +234,12 @@
             
   <div class="section" id="learning">
 <h1>Learning<a class="headerlink" href="#learning" title="Permalink to this headline">¶</a></h1>
-<p>I am constantly learning new things. This stems because I am super curious. It’s all I can do to control this, and focus. I like my bullet journal for this reason. But sometimes, it helps to be super curious. If my school teachers understood this instead of wondering why I was a bad student, I would have spent school years learning so much more.</p>
+<p>I am constantly learning new things. This stems because I am super curious. It’s all I can do to control this,
+and focus. I like my bullet journal for this reason. But sometimes, it helps to be super curious.
+If my school teachers understood this instead of wondering why I was a bad student,
+I would have spent school years learning so much more.</p>
 <p>At this point, these are the things I am learning. These are things I want to learn, and I’ll use 5 🟊s to mark progress.</p>
-<div class="admonition note">
+<div class="tip admonition">
 <p class="first admonition-title">Note</p>
 <p class="last">I consider things <strong>learnt</strong> when I make something with it. Something useful. I’ll then make an entry in the projects pages.</p>
 </div>
@@ -251,9 +264,9 @@
 <tbody valign="top">
 <tr class="row-even"><td>Sphinx</td>
 <td>Python, Documentation, Programming</td>
-<td>🟊🟊</td>
-<td>2018-07-14</td>
-<td>TODO: Learn how to make a local readthedocs server and have it automatically pull from various mappable libraries.</td>
+<td>🟊🟊🟊🟊</td>
+<td>2018-09-28</td>
+<td>TODO: Link this to Jenkins so I can run my own readthedocs server, in a manner of speaking.</td>
 </tr>
 <tr class="row-odd"><td>RabbitMQ | Pika</td>
 <td>Python, Microservices, Deployment, Development</td>
@@ -336,7 +349,19 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #a54;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #333;
+    }
+  </style>
+
 
 </body>
 </html>
