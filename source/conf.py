@@ -12,7 +12,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
@@ -99,7 +99,7 @@ html_context = {
 # documentation.
 #
 # html_theme_options = {}
-
+html_logo = os.path.join("_static", "logo.png")
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -138,7 +138,7 @@ htmlhelp_basename = 'VinayKeerthi'
 # -- Options for latex output -------------------------------------------------
 
 # latex_show_urls = ""
-
+latex_engine = "pdflatex"
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #

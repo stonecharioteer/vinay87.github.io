@@ -3,7 +3,7 @@ Curriculum Vitae
 
 **Vinay Keerthi K. T.**
 
-.. only:: latex
+.. only:: latex or latexpdf
 
     --------------------
     Contact Information 
@@ -29,8 +29,8 @@ GKN Aerospace India / GKN Driveline
 
 December 2016 - |today|
 
-This role involves various development activities, mostly handled independently. I was recruited as the sole developer for the business in India, and tasked with setting
-up the foundation for a team of software developers.
+This role involves various development activities, mostly handled independently. I was recruited as the sole developer
+for the business in India, and tasked with setting up the foundation for a team of software developers.
 
 +--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |                                            |                                                                  |                                                        |
@@ -89,8 +89,9 @@ up the foundation for a team of software developers.
 |                                            |                                                                  |                                                        |
 +--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-..
-  breaking table here.
+.. breaking table here.
+
+
 
 +--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |                                            |                                                                  |                                                        |
@@ -111,15 +112,14 @@ up the foundation for a team of software developers.
 Additional Responsibilities
 
 * Various SysAdmin and DevOps roles:
-    * SCM duties for Subversion and Gitlab.
+    * SCM duties for Subversion and GitLab.
     * Setting up a subversion mirror server in Bangalore to sync to Germany.
     * Writing hooks for SCM Servers.
     * Automating builds/provisioning using Ansible and Jenkins.
     * Maintaining local Docker Registry.
-    * Maintaining local pypi index.
+    * Maintaining local pypi index with all required wheels and builds.
     * Creating adhoc scripts for the team to save them time.
     * Provisioning and Maintenance of VMWare vSphere Hypervisor machines.
-
 
 ************************************
 Flipkart Internet Pvt. Ltd.
@@ -237,8 +237,8 @@ Zelda: Telegram Bot
 Technology: **python**, **raspberry pi**, **telegram-bot-api**, **rasa-python**
 
 Zelda is a personal chat bot that I use to link up and debug several of my services.
-I use Zelda constantly, when I am too lazy to write other interfaces for my services.
-Zelda is developed so that I can add plugins as and when I want.
+I use Zelda constantly, when I am too lazy to write other interfaces for them.
+This bot is developed so that I can add plugins as and when I want.
 
 **************************************
 Shelfie: Bookshelf Search Engine
@@ -271,23 +271,46 @@ Technology: **Raspberry Pi**, **Google Voice Hat**, **Amazon Alexa Skills**, **A
 Using a Google Voice Hat for the Raspberry Pi, running the AlexaPi OS, I've set up a voice interface for my telegram chat bot,
 one that can also access all my home services.
 
-------------------
-Blog Articles
-------------------
+-------------------------
+Technical Blog Articles
+-------------------------
 
-1. Vial: A Webserver for Micropython
-#. Using Apache Solr on a Raspberry Pi
-#. Creating Product Specification Images For E-Retail Using Python
-#. Raspberry Pi Around the House
-#. Using RabbitMQ on a Raspberry Pi
-#. Shelfie: A Search Engine For Inventory Management
-#. Writing a novel using Sphinx and Python.
-#. Automating Sphinx Pipelines For the Kindle using Jenkins and Calibre-CLI
-#. Manage Migraines using a Raspberry Pi, a Sense Hat, and a lot of Python
-#. Using Python-Rasa to make simple NLP interfaces on the Raspberry Pi.
-#. Programming Voice Interfaces for Amazon Alexa using Python
-#. Setting Up Wifi and Access Points on the ESP8266 Using Micropython
-#. Developing Micropython Modules
+.. 
+    Need to sort these articles out into the ones I **can** write in a few weeks, and ones I should shelve for later.
+    Do not want to corner myself in to a lie.
+
+.. note:: 
+
+    You may find more blog articles online `here. <https://vinay87/github.io/blog/index.html>`_
+    Additionally, you may find my articles on `Medium.com. <https://medium.com/@ktvkvinaykeerthi>`_
+
+
+.. only:: latex or latexpdf
+
+    1. Vial: A Webserver for Micropython
+    #. `Creating Product Specification Images For E-Retail Using Python <https://medium.com/@ktvkvinaykeerthi/leonardo-generating-product-unique-specification-images-using-python-cc00ee3667c8>`_
+    #. Shelfie: A Search Engine For Inventory Management
+    #. Using Apache Solr on a Raspberry Pi
+    #. Manage Migraines using a Raspberry Pi, a Sense Hat, and a lot of Python
+    #. Pi, Print Me a Story or a Poem
+
+.. only:: html or singlehtml
+
+
+    1. Vial: A Webserver for Micropython
+    #. Creating Product Specification Images For E-Retail Using Python
+    #. Shelfie: A Search Engine For Inventory Management
+    #. Using Apache Solr on a Raspberry Pi
+    #. Manage Migraines using a Raspberry Pi, a Sense Hat, and a lot of Python
+    #. Pi, Print Me a Story or a Poem
+    #. Raspberry Pi Around the House
+    #. Using RabbitMQ on a Raspberry Pi
+    #. Writing a novel using Sphinx and Python.
+    #. Automating Sphinx Pipelines For the Kindle using Jenkins and Calibre-CLI
+    #. Using Python-Rasa to make simple NLP interfaces on the Raspberry Pi.
+    #. Setting Up Wifi and Access Points on the ESP8266 Using Micropython
+    #. Programming Voice Interfaces for Amazon Alexa using Python
+    #. Developing Micropython Modules
 
 ------------------------------------
 Open Source Contributions
@@ -362,7 +385,8 @@ Technical Skills
 +------------------------------------+----------------------------------------------------------------------------------+
 | *Virtual Machines & Containers*                                                                                       |
 +------------------------------------+----------------------------------------------------------------------------------+
-| Core Expertise                     |     VMWare vSphere, Oracle Virtualbox, Vagrant, Docker, Docker Swarm             |
+| Core Expertise                     |     VMWare vSphere, Oracle Virtualbox                                            |
+|                                    |     Vagrant, Docker, Docker Swarm                                                |
 +------------------------------------+----------------------------------------------------------------------------------+
 | *Provisioning and Pipelines*                                                                                          |
 +------------------------------------+----------------------------------------------------------------------------------+
@@ -376,14 +400,15 @@ Hobbies
 
 1. Reading books of science fiction, fantasy, world history, stoicism, war and mythology.
 #. Writing novels and short stories, drawing maps.
+#. Collecting books.
 #. Programming for fun.
 
 ------------------
 Education
 ------------------
 
-+---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
-|    **Degree**                         |       **Year**                   |              **University**                     | **Score**   |
-+=======================================+==================================+=================================================+=============+
-| Bachelors of Engineering (Mechanical) |        2010                      |           Visvesvariah Technological University |   75%       |
-+---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
++---------------------------------------+-------------+-----------------------------------------+-------------+
+|    **Degree**                         |  **Year**   |      **University**                     | **Score**   |
++=======================================+=============+=========================================+=============+
+| Bachelors of Engineering (Mechanical) |   2010      |   Visvesvariah Technological University |   75%       |
++---------------------------------------+-------------+-----------------------------------------+-------------+

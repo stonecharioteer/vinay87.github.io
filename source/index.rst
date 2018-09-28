@@ -17,7 +17,7 @@ Vinay Keerthi
         resume
         writing
         projects
-        blog
+        blog/index
         random
 
 .. only:: latex or pdflatex or pdf
