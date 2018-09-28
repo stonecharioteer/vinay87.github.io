@@ -12,7 +12,6 @@ Vinay Keerthi
         :caption: Contents
         :maxdepth: 2
         
-        self
         intro
         resume
         writing
@@ -20,6 +19,6 @@ Vinay Keerthi
         blog/index
         random
 
-.. only:: latex or pdflatex or pdf
+.. only:: latex or latexpdf
 
     .. include:: resume.rst
