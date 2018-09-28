@@ -37,6 +37,21 @@ up the foundation for a team of software developers.
 |              **Projects**                  |          **Contribution/Activities**                             |              **Benefits**                              |
 |                                            |                                                                  |                                                        |
 +============================================+==================================================================+========================================================+
+| Automated pipelines for mechanical         |  * Bridged the workflows of mechanical engineers so that they    |  * Mechanical engineers who are not used to writing    |
+| workflows                                  |    can be integrated into tools like Jenkins.                    |    code can now create simple scripts to automate      |
+|                                            |                                                                  |    their workflow and monitor said automation with     |
+|                                            |  * Created libraries and scripts enabling the use of tools       |    ease.                                               |
+|                                            |    such as *Apache Airflow* or Jenkins to automate               |                                                        |
+|                                            |    their workflow.                                               |                                                        |
+|                                            |                                                                  |                                                        |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+
+
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|                                            |                                                                  |                                                        |
+|              **Projects**                  |          **Contribution/Activities**                             |              **Benefits**                              |
+|                                            |                                                                  |                                                        |
++============================================+==================================================================+========================================================+
 | **Archimedes** : Simulation Process &      | * Lead Developer for the project, also created the brand         |  * Built most of the tool single-handedly, handling    |
 | Data Management System                     |   identity and designed the logos and palettes.                  |    both the project conception as well as execution.   |
 |                                            |                                                                  |                                                        |
@@ -82,14 +97,6 @@ up the foundation for a team of software developers.
 |              **Projects**                  |          **Contribution/Activities**                             |              **Benefits**                              |
 |                                            |                                                                  |                                                        |
 +============================================+==================================================================+========================================================+
-| Automated pipelines for mechanical         |  * Bridged the workflows of mechanical engineers so that they    |  * Mechanical engineers who are not used to writing    |
-| workflows                                  |    can be integrated into tools like Jenkins.                    |    code can now create simple scripts to automate      |
-|                                            |                                                                  |    their workflow and monitor said automation with     |
-|                                            |  * Created libraries and scripts enabling the use of tools       |    ease.                                               |
-|                                            |    such as *Apache Airflow* or Jenkins to automate               |                                                        |
-|                                            |    their workflow.                                               |                                                        |
-|                                            |                                                                  |                                                        |
-+--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 | Temperature sensors for Office AC          |  * Plugged ESP8266 modules running micropython webservers        |  * Made it easier for housekeeping to keep track       |
 | Monitoring                                 |    to capture temperature data across the office.                |    of an archaic AC's efficiency and identify          |
 |                                            |                                                                  |    hot zones.                                          |
@@ -139,6 +146,13 @@ Working for the Catalog function of Flipkart, I was tasked with building tools a
 |                                            |                                                      |                                                      |
 |                                            |                                                      |                                                      |
 +--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
+
+
++--------------------------------------------+------------------------------------------------------+------------------------------------------------------+
+|                                            |                                                      |                                                      |
+|              **Projects**                  |              **Contribution/Activities**             |             **Benefits**                             |
+|                                            |                                                      |                                                      |
++============================================+======================================================+======================================================+
 | **LEONARDO**                               |  * Created a tool that was used to generate          |  * This helped buyers make educated choices in a     |
 |                                            |    images that could educate buyers about the key    |    few seconds.                                      |
 | USP Image Creation Tool                    |    selling points of a product without having to     |                                                      |
@@ -286,41 +300,75 @@ Open Source Contributions
 Technical Skills
 ------------------
 
-1. Programming Languages
-    #. Python
-    #. Micropython
-    #. Cython
-#. Raspberry Pi Programming
-#. ESP8266 Programming
-    #. Arduino C
-    #. Micropython
-    #. Circuitpython
-#. Full Stack Web Development
-    #. System Design for Microservices
-    #. React.js
-    #. nodejs
-    #. Javascript
-    #. Bootstrap CSS
-    #. Redis
-    #. RabbitMQ
-    #. Memcached
-    #. Docker
-    #. Docker Swarm
-    #. Mesos
-    #. Elasticsearch
-    #. Apache SOLR
-#. Databases
-    #. SQL
-        #. MySQL
-        #. PostgreSQL
-    #. NoSQL
-        #. MongoDB
-        #. CouchDB
-#. Others
-    #. Ansible
-    #. Jenkins
-    #. Grafana
-    #. Apache Airflow
++-----------------------------------------------------------------------------------------------------------------------+
+| **Programming Languages**                                                                                             |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Python, Micropython, Cython                                                  |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Profiency             |     nodejs                                                                       |
++------------------------------------+----------------------------------------------------------------------------------+
+| Basic Fluency                      |     C (Can extend python source code)                                            |
++------------------------------------+----------------------------------------------------------------------------------+
+| **IoT Related Hardware**                                                                                              |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Raspberry Pi (2, 3 and Zero W), ESP8266                                      |
++------------------------------------+----------------------------------------------------------------------------------+
+| **Web Development**                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------+
+| *Backend Frameworks*                                                                                                  |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Flask                                                                        |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Fluency               |     Nodejs                                                                       |
++------------------------------------+----------------------------------------------------------------------------------+
+| *Frontend Frameworks*                                                                                                 |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Vue.js, React.js, Bulma CSS                                                  |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Fluency               |     React Native, Electron.js, Meteor.js, Bootstrap CSS                          |
++------------------------------------+----------------------------------------------------------------------------------+
+| **Databases**                                                                                                         |
++------------------------------------+----------------------------------------------------------------------------------+
+| *SQL Databases*                                                                                                       |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     MySQL, PostgresSQL                                                           |
++------------------------------------+----------------------------------------------------------------------------------+
+| *NoSQL Databases*                                                                                                     |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     MongoDB, CouchDB                                                             |
++------------------------------------+----------------------------------------------------------------------------------+
+| **Message Queues**                                                                                                    |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     RabbitMQ                                                                     |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Fluency               |     Redis                                                                        |
++------------------------------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------+----------------------------------------------------------------------------------+
+| **Others**                                                                                                            |
++------------------------------------+----------------------------------------------------------------------------------+
+| *Memory Cache Store*                                                                                                  |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Memcached                                                                    |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Fluency               |     Redis                                                                        |
++------------------------------------+----------------------------------------------------------------------------------+
+| *Search Services*                                                                                                     |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Elasticsearch                                                                |
++------------------------------------+----------------------------------------------------------------------------------+
+| Intermediate Fluency               |     Apache SOLR                                                                  |
++------------------------------------+----------------------------------------------------------------------------------+
+| *Virtual Machines & Containers*                                                                                       |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     VMWare vSphere, Oracle Virtualbox, Vagrant, Docker, Docker Swarm             |
++------------------------------------+----------------------------------------------------------------------------------+
+| *Provisioning and Pipelines*                                                                                          |
++------------------------------------+----------------------------------------------------------------------------------+
+| Core Expertise                     |     Jenkins, Airflow, Ansible                                                    |
++------------------------------------+----------------------------------------------------------------------------------+
+
 
 ------------------
 Hobbies
@@ -335,7 +383,7 @@ Education
 ------------------
 
 +---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
-|    **Degree**                         |       **Year**                   |              **University**                     | Percentage  |
+|    **Degree**                         |       **Year**                   |              **University**                     | **Score**   |
 +=======================================+==================================+=================================================+=============+
-| Bachelors of Engineering (Mechanical) |        2010                      |           Visvesvariah Technological University |   75        |
+| Bachelors of Engineering (Mechanical) |        2010                      |           Visvesvariah Technological University |   75%       |
 +---------------------------------------+----------------------------------+-------------------------------------------------+-------------+
