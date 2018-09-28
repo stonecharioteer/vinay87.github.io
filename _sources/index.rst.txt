@@ -1,22 +1,25 @@
-.. Vinay's Personal Github Page documentation master file, created by
-   sphinx-quickstart on Thu Jul 12 10:25:31 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+==============
 Vinay Keerthi
 ==============
+.. only:: html or singlehtml
 
+    Hello and welcome to my Github Page. Feel free to look around and peruse through my profile. 
+    `Email me <mailto:ktvkvinaykeerthi@gmail.com>`_ if you'd like to get in touch.
 
-Hello and welcome to my Github Page. Feel free to look around and peruse through my profile. `Email me <mailto:ktvkvinaykeerthi@gmail.com>`_ if you'd like to get in touch.
+.. only:: html or singlehtml
 
+    .. toctree::
+        :caption: Contents
+        :maxdepth: 2
+        
+        self
+        intro
+        resume
+        writing
+        projects
+        blog
+        random
 
-.. toctree::
-   :caption: Contents
+.. only:: latex or pdflatex or pdf
 
-   intro
-   resume
-   writing
-   projects
-   blog
-   random
-
+    .. include:: resume.rst
