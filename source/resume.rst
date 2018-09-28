@@ -194,12 +194,17 @@ Narasipur Autocomponents Pvt. Ltd
 
 **May 2013-January 2014**
 
+* Created Excel-based macros to generate production reports and graphs from input data collected by engineers after each shift.
+* Created spreadsheets to plot the quality data in Range and Average Control Charts according to ISO 9001 standards.
+
 *************************************************
 India Nippon Electricals Ltd. (Lucas-TVS Group)
 *************************************************
 **Graduate Engineer Trainee - Production Engineering**
 
 **April 2012-April 2013**
+
+* Created macros to automatically pull data from 12 industrial ovens and plot the data.
 
 ************************************
 Harita Fehrer Ltd. (TVS Group)
@@ -208,6 +213,7 @@ Harita Fehrer Ltd. (TVS Group)
 
 **December 2011-March 2012**
 
+* Created spreadsheets to calculate the acceptance factors for measurement instruments for calibration.
 
 ************************************
 Indian Institute of Science
@@ -216,6 +222,8 @@ Indian Institute of Science
 
 **February 2011-July 2011**
 
+* Used Python for computational analysis of a numerical model for a sandwich composite material.
+* Used Python to automatically download technical papers from the Springer and Elsevier website using the university access.
 
 --------------------
 Personal Projects
@@ -281,7 +289,7 @@ Technical Blog Articles
 
 .. note:: 
 
-    You may find more blog articles online `here. <https://vinay87/github.io/blog/index.html>`_
+    You may find more blog articles online `on my personal github pages. <https://vinay87/github.io/blog/index.html>`_
     Additionally, you may find my articles on `Medium.com. <https://medium.com/@ktvkvinaykeerthi>`_
 
 

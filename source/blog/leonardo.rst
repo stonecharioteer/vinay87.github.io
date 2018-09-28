@@ -18,7 +18,7 @@ I was still a greenhorn when it came to Python in those days, but I’d learnt h
 I used to watermark images using IrfanView, and I’d seen that Gimp had Python plugins.
 I wondered if I could use that to help my team out.
 
-**Could* Python be used to generate images?*
+***Could** Python be used to generate images?*
 
 I offered to try and do something to automate the grunt work: selecting the product image, getting the specifications and
 selecting appropriate icons, choosing what images to place and placing them exactly in the center, ensuring that the product
@@ -29,9 +29,10 @@ He said I should try doing this. Frankly, I wondered if I was in over my head. I
 
 The first step was generating a canvas. I needed something with a 9:14 resolution, according to the requirement.
 
-I defined a custom class for this image: the USPImage class.
+I defined a custom class for this image, the ``USPImage`` class.
 
-One of the methods, named prepareCanvas, would then take the aspect ratio provided to it, and the width, and, as if the name was not obvious, prepare the canvas.
+One of the methods, named prepareCanvas, would then take the aspect ratio provided to it, and the width,
+and, as if the name was not obvious, prepare the canvas.
 
 .. code::
     :linenos:
@@ -51,7 +52,7 @@ One of the methods, named prepareCanvas, would then take the aspect ratio provid
         self.canvas = Image.new("RGBA", canvas_size, (255,255,255,255))
 
 
-The ```Image``` class comes from the ```PIL``` Python library. That’s a handy library that made this entire project possible. It provides an abstraction for images as matrixes of RGBA values at each row x column intersection. But it doesn’t offer any of the readymade tools provided in image processing software such as Photoshop or Gimp.
+The ``Image`` class comes from the ``PIL`` Python library. That’s a handy library that made this entire project possible. It provides an abstraction for images as matrixes of RGBA values at each row x column intersection. But it doesn’t offer any of the readymade tools provided in image processing software such as Photoshop or Gimp.
 
 But it does provide you the highest degree of control you could want.
 

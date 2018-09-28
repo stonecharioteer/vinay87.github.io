@@ -14,4 +14,5 @@ I also cross-post them on Medium, `here. <https://medium.com/@ktvkvinaykeerthi>`
 
 .. toctree::
 
-    leonardo.rst
+    leonardo
+    
